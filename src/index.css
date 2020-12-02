@@ -1,13 +1,102 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*****************Product Image***************/
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.products li {
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 15rem;
+  margin: 5px;
+  height: 25rem;
+}
+.products-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.products-brand {
+  font-size: 0.8rem;
+  color: darkorange;
+}
+.products-price {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  color: red;
+}
+.products-image {
+  max-width: 12rem;
+  max-height: 15rem;
+}
+.products-rating {
+  font-size: 0.7rem;
+}
+
+.product-price-discount {
+  padding-top: 3px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.product-totalprice {
+  font-size: 0.65rem;
+  padding-top: 7px;
+  color: darksalmon;
+  text-decoration: line-through;
+}
+
+.products-image:hover {
+  transform: scale(1.05);
+}
+
+.category {
+  width: 15%;
+  border-right: 1px solid lightgray;
+}
+
+.productlist {
+  width: 85%;
+}
+
+.main {
+  display: flex;
+  border-top: 1px solid lightgray;
+  margin-top: 2rem;
+}
+
+/*****************Categories**************/
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.categories li {
+  list-style-type: none;
+  padding: 0;
 }
